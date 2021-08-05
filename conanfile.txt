@@ -1,0 +1,6 @@
+[requires]
+openimageio/2.2.7.0
+
+[generators]
+xcode
+

@@ -8,12 +8,107 @@
 
 /* Begin PBXBuildFile section */
 		A00B6E6926BAFF7400F4FC8E /* SwiftOIIO.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6E6726BAFF7400F4FC8E /* SwiftOIIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A00B6E7126BAFFC000F4FC8E /* NSImage+OIIO.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6E7026BAFFC000F4FC8E /* NSImage+OIIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A00B6E7426BAFFEC00F4FC8E /* OIIOImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6E7326BAFFEC00F4FC8E /* OIIOImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A00B6E7726BB001000F4FC8E /* OIIOImageRep.mm in Sources */ = {isa = PBXBuildFile; fileRef = A00B6E7626BB001000F4FC8E /* OIIOImageRep.mm */; };
+		A00B6E7B26BB003B00F4FC8E /* OIIOHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A00B6E7A26BB003B00F4FC8E /* OIIOHelper.mm */; };
+		A00B6E8026BB008600F4FC8E /* NSImage+OIIO.m in Sources */ = {isa = PBXBuildFile; fileRef = A00B6E7F26BB008600F4FC8E /* NSImage+OIIO.m */; };
+		A00B6E8426BB0A4100F4FC8E /* conanbuildinfo.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A00B6E8326BB0A4100F4FC8E /* conanbuildinfo.xcconfig */; };
+		A00B6EBA26BB0C8000F4FC8E /* BaseTypeConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EA526BB0C8000F4FC8E /* BaseTypeConverter.h */; };
+		A00B6EBB26BB0C8000F4FC8E /* Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EA626BB0C8000F4FC8E /* Codec.cpp */; };
+		A00B6EBC26BB0C8000F4FC8E /* Codec.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EA726BB0C8000F4FC8E /* Codec.h */; };
+		A00B6EBD26BB0C8000F4FC8E /* DPX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EA826BB0C8000F4FC8E /* DPX.cpp */; };
+		A00B6EBE26BB0C8000F4FC8E /* DPX.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EA926BB0C8000F4FC8E /* DPX.h */; };
+		A00B6EBF26BB0C8000F4FC8E /* DPXColorConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EAA26BB0C8000F4FC8E /* DPXColorConverter.cpp */; };
+		A00B6EC026BB0C8000F4FC8E /* DPXColorConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EAB26BB0C8000F4FC8E /* DPXColorConverter.h */; };
+		A00B6EC126BB0C8000F4FC8E /* DPXHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EAC26BB0C8000F4FC8E /* DPXHeader.cpp */; };
+		A00B6EC226BB0C8000F4FC8E /* DPXHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EAD26BB0C8000F4FC8E /* DPXHeader.h */; };
+		A00B6EC326BB0C8000F4FC8E /* DPXStream.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EAE26BB0C8000F4FC8E /* DPXStream.h */; };
+		A00B6EC426BB0C8000F4FC8E /* ElementReadStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EAF26BB0C8000F4FC8E /* ElementReadStream.cpp */; };
+		A00B6EC526BB0C8000F4FC8E /* ElementReadStream.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EB026BB0C8000F4FC8E /* ElementReadStream.h */; };
+		A00B6EC626BB0C8000F4FC8E /* EndianSwap.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EB126BB0C8000F4FC8E /* EndianSwap.h */; };
+		A00B6EC726BB0C8000F4FC8E /* InStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EB226BB0C8000F4FC8E /* InStream.cpp */; };
+		A00B6EC826BB0C8000F4FC8E /* OutStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EB326BB0C8000F4FC8E /* OutStream.cpp */; };
+		A00B6EC926BB0C8000F4FC8E /* Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EB426BB0C8000F4FC8E /* Reader.cpp */; };
+		A00B6ECA26BB0C8000F4FC8E /* ReaderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EB526BB0C8000F4FC8E /* ReaderInternal.h */; };
+		A00B6ECB26BB0C8000F4FC8E /* RunLengthEncoding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EB626BB0C8000F4FC8E /* RunLengthEncoding.cpp */; };
+		A00B6ECC26BB0C8000F4FC8E /* RunLengthEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EB726BB0C8000F4FC8E /* RunLengthEncoding.h */; };
+		A00B6ECD26BB0C8000F4FC8E /* Writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EB826BB0C8000F4FC8E /* Writer.cpp */; };
+		A00B6ECE26BB0C8000F4FC8E /* WriterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6EB926BB0C8000F4FC8E /* WriterInternal.h */; };
+		A00B6ED226BB0DCA00F4FC8E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00B6ED126BB0DCA00F4FC8E /* Accelerate.framework */; };
+		A00B6EE626BB0FE700F4FC8E /* SwiftOIIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B6EE526BB0FE700F4FC8E /* SwiftOIIO.swift */; };
+		A045B81F26BB114100859CE5 /* OIIOHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A00B6E7E26BB006600F4FC8E /* OIIOHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A045B83226BB129600859CE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A045B83126BB129600859CE5 /* AppDelegate.swift */; };
+		A045B83426BB129600859CE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A045B83326BB129600859CE5 /* ContentView.swift */; };
+		A045B83626BB129800859CE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A045B83526BB129800859CE5 /* Assets.xcassets */; };
+		A045B83926BB129800859CE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A045B83826BB129800859CE5 /* Preview Assets.xcassets */; };
+		A045B83C26BB129800859CE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A045B83A26BB129800859CE5 /* Main.storyboard */; };
+		A045B84426BB131D00859CE5 /* SwiftOIIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00B6E6426BAFF7400F4FC8E /* SwiftOIIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A00B6E6426BAFF7400F4FC8E /* SwiftOIIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOIIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00B6E6726BAFF7400F4FC8E /* SwiftOIIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOIIO.h; sourceTree = "<group>"; };
 		A00B6E6826BAFF7400F4FC8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00B6E7026BAFFC000F4FC8E /* NSImage+OIIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+OIIO.h"; sourceTree = "<group>"; };
+		A00B6E7326BAFFEC00F4FC8E /* OIIOImageRep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OIIOImageRep.h; sourceTree = "<group>"; };
+		A00B6E7626BB001000F4FC8E /* OIIOImageRep.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OIIOImageRep.mm; sourceTree = "<group>"; };
+		A00B6E7A26BB003B00F4FC8E /* OIIOHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OIIOHelper.mm; sourceTree = "<group>"; };
+		A00B6E7E26BB006600F4FC8E /* OIIOHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OIIOHelper.h; sourceTree = "<group>"; };
+		A00B6E7F26BB008600F4FC8E /* NSImage+OIIO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+OIIO.m"; sourceTree = "<group>"; };
+		A00B6E8326BB0A4100F4FC8E /* conanbuildinfo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conanbuildinfo.xcconfig; sourceTree = "<group>"; };
+		A00B6E8E26BB0C6500F4FC8E /* BaseTypeConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTypeConverter.h; sourceTree = "<group>"; };
+		A00B6E8F26BB0C6500F4FC8E /* Codec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Codec.cpp; sourceTree = "<group>"; };
+		A00B6E9026BB0C6500F4FC8E /* Codec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Codec.h; sourceTree = "<group>"; };
+		A00B6E9126BB0C6500F4FC8E /* DPX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DPX.cpp; sourceTree = "<group>"; };
+		A00B6E9226BB0C6500F4FC8E /* DPX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPX.h; sourceTree = "<group>"; };
+		A00B6E9326BB0C6500F4FC8E /* DPXColorConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DPXColorConverter.cpp; sourceTree = "<group>"; };
+		A00B6E9426BB0C6500F4FC8E /* DPXColorConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPXColorConverter.h; sourceTree = "<group>"; };
+		A00B6E9526BB0C6500F4FC8E /* DPXHeader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DPXHeader.cpp; sourceTree = "<group>"; };
+		A00B6E9626BB0C6500F4FC8E /* DPXHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPXHeader.h; sourceTree = "<group>"; };
+		A00B6E9726BB0C6500F4FC8E /* DPXStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPXStream.h; sourceTree = "<group>"; };
+		A00B6E9826BB0C6500F4FC8E /* ElementReadStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ElementReadStream.cpp; sourceTree = "<group>"; };
+		A00B6E9926BB0C6500F4FC8E /* ElementReadStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementReadStream.h; sourceTree = "<group>"; };
+		A00B6E9A26BB0C6500F4FC8E /* EndianSwap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndianSwap.h; sourceTree = "<group>"; };
+		A00B6E9B26BB0C6500F4FC8E /* InStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InStream.cpp; sourceTree = "<group>"; };
+		A00B6E9C26BB0C6500F4FC8E /* OutStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OutStream.cpp; sourceTree = "<group>"; };
+		A00B6E9D26BB0C6500F4FC8E /* Reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reader.cpp; sourceTree = "<group>"; };
+		A00B6E9E26BB0C6500F4FC8E /* ReaderInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderInternal.h; sourceTree = "<group>"; };
+		A00B6E9F26BB0C6500F4FC8E /* RunLengthEncoding.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RunLengthEncoding.cpp; sourceTree = "<group>"; };
+		A00B6EA026BB0C6500F4FC8E /* RunLengthEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLengthEncoding.h; sourceTree = "<group>"; };
+		A00B6EA126BB0C6500F4FC8E /* Writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Writer.cpp; sourceTree = "<group>"; };
+		A00B6EA226BB0C6500F4FC8E /* WriterInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriterInternal.h; sourceTree = "<group>"; };
+		A00B6EA526BB0C8000F4FC8E /* BaseTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTypeConverter.h; sourceTree = "<group>"; };
+		A00B6EA626BB0C8000F4FC8E /* Codec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Codec.cpp; sourceTree = "<group>"; };
+		A00B6EA726BB0C8000F4FC8E /* Codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Codec.h; sourceTree = "<group>"; };
+		A00B6EA826BB0C8000F4FC8E /* DPX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DPX.cpp; sourceTree = "<group>"; };
+		A00B6EA926BB0C8000F4FC8E /* DPX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPX.h; sourceTree = "<group>"; };
+		A00B6EAA26BB0C8000F4FC8E /* DPXColorConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DPXColorConverter.cpp; sourceTree = "<group>"; };
+		A00B6EAB26BB0C8000F4FC8E /* DPXColorConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPXColorConverter.h; sourceTree = "<group>"; };
+		A00B6EAC26BB0C8000F4FC8E /* DPXHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DPXHeader.cpp; sourceTree = "<group>"; };
+		A00B6EAD26BB0C8000F4FC8E /* DPXHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPXHeader.h; sourceTree = "<group>"; };
+		A00B6EAE26BB0C8000F4FC8E /* DPXStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPXStream.h; sourceTree = "<group>"; };
+		A00B6EAF26BB0C8000F4FC8E /* ElementReadStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElementReadStream.cpp; sourceTree = "<group>"; };
+		A00B6EB026BB0C8000F4FC8E /* ElementReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementReadStream.h; sourceTree = "<group>"; };
+		A00B6EB126BB0C8000F4FC8E /* EndianSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndianSwap.h; sourceTree = "<group>"; };
+		A00B6EB226BB0C8000F4FC8E /* InStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InStream.cpp; sourceTree = "<group>"; };
+		A00B6EB326BB0C8000F4FC8E /* OutStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutStream.cpp; sourceTree = "<group>"; };
+		A00B6EB426BB0C8000F4FC8E /* Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Reader.cpp; sourceTree = "<group>"; };
+		A00B6EB526BB0C8000F4FC8E /* ReaderInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderInternal.h; sourceTree = "<group>"; };
+		A00B6EB626BB0C8000F4FC8E /* RunLengthEncoding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RunLengthEncoding.cpp; sourceTree = "<group>"; };
+		A00B6EB726BB0C8000F4FC8E /* RunLengthEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLengthEncoding.h; sourceTree = "<group>"; };
+		A00B6EB826BB0C8000F4FC8E /* Writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Writer.cpp; sourceTree = "<group>"; };
+		A00B6EB926BB0C8000F4FC8E /* WriterInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriterInternal.h; sourceTree = "<group>"; };
+		A00B6ED126BB0DCA00F4FC8E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A00B6EE526BB0FE700F4FC8E /* SwiftOIIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOIIO.swift; sourceTree = "<group>"; };
+		A045B82F26BB129600859CE5 /* SwiftOIIOViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftOIIOViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A045B83126BB129600859CE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A045B83326BB129600859CE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A045B83526BB129800859CE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A045B83826BB129800859CE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A045B83B26BB129800859CE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A045B83D26BB129800859CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A045B83E26BB129800859CE5 /* SwiftOIIOViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftOIIOViewer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +116,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00B6ED226BB0DCA00F4FC8E /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A045B82C26BB129600859CE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A045B84426BB131D00859CE5 /* SwiftOIIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,8 +134,12 @@
 		A00B6E5A26BAFF7400F4FC8E = {
 			isa = PBXGroup;
 			children = (
+				A00B6E8D26BB0C6500F4FC8E /* libdpx */,
+				A00B6E8326BB0A4100F4FC8E /* conanbuildinfo.xcconfig */,
 				A00B6E6626BAFF7400F4FC8E /* SwiftOIIO */,
+				A045B83026BB129600859CE5 /* SwiftOIIOViewer */,
 				A00B6E6526BAFF7400F4FC8E /* Products */,
+				A00B6ED026BB0DCA00F4FC8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A00B6E6426BAFF7400F4FC8E /* SwiftOIIO.framework */,
+				A045B82F26BB129600859CE5 /* SwiftOIIOViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +155,104 @@
 		A00B6E6626BAFF7400F4FC8E /* SwiftOIIO */ = {
 			isa = PBXGroup;
 			children = (
+				A00B6EA426BB0C8000F4FC8E /* libdpx */,
 				A00B6E6726BAFF7400F4FC8E /* SwiftOIIO.h */,
 				A00B6E6826BAFF7400F4FC8E /* Info.plist */,
+				A00B6E7026BAFFC000F4FC8E /* NSImage+OIIO.h */,
+				A00B6E7F26BB008600F4FC8E /* NSImage+OIIO.m */,
+				A00B6E7326BAFFEC00F4FC8E /* OIIOImageRep.h */,
+				A00B6E7626BB001000F4FC8E /* OIIOImageRep.mm */,
+				A00B6E7A26BB003B00F4FC8E /* OIIOHelper.mm */,
+				A00B6E7E26BB006600F4FC8E /* OIIOHelper.h */,
+				A00B6EE526BB0FE700F4FC8E /* SwiftOIIO.swift */,
 			);
 			path = SwiftOIIO;
+			sourceTree = "<group>";
+		};
+		A00B6E8D26BB0C6500F4FC8E /* libdpx */ = {
+			isa = PBXGroup;
+			children = (
+				A00B6E8E26BB0C6500F4FC8E /* BaseTypeConverter.h */,
+				A00B6E8F26BB0C6500F4FC8E /* Codec.cpp */,
+				A00B6E9026BB0C6500F4FC8E /* Codec.h */,
+				A00B6E9126BB0C6500F4FC8E /* DPX.cpp */,
+				A00B6E9226BB0C6500F4FC8E /* DPX.h */,
+				A00B6E9326BB0C6500F4FC8E /* DPXColorConverter.cpp */,
+				A00B6E9426BB0C6500F4FC8E /* DPXColorConverter.h */,
+				A00B6E9526BB0C6500F4FC8E /* DPXHeader.cpp */,
+				A00B6E9626BB0C6500F4FC8E /* DPXHeader.h */,
+				A00B6E9726BB0C6500F4FC8E /* DPXStream.h */,
+				A00B6E9826BB0C6500F4FC8E /* ElementReadStream.cpp */,
+				A00B6E9926BB0C6500F4FC8E /* ElementReadStream.h */,
+				A00B6E9A26BB0C6500F4FC8E /* EndianSwap.h */,
+				A00B6E9B26BB0C6500F4FC8E /* InStream.cpp */,
+				A00B6E9C26BB0C6500F4FC8E /* OutStream.cpp */,
+				A00B6E9D26BB0C6500F4FC8E /* Reader.cpp */,
+				A00B6E9E26BB0C6500F4FC8E /* ReaderInternal.h */,
+				A00B6E9F26BB0C6500F4FC8E /* RunLengthEncoding.cpp */,
+				A00B6EA026BB0C6500F4FC8E /* RunLengthEncoding.h */,
+				A00B6EA126BB0C6500F4FC8E /* Writer.cpp */,
+				A00B6EA226BB0C6500F4FC8E /* WriterInternal.h */,
+			);
+			path = libdpx;
+			sourceTree = "<group>";
+		};
+		A00B6EA426BB0C8000F4FC8E /* libdpx */ = {
+			isa = PBXGroup;
+			children = (
+				A00B6EA526BB0C8000F4FC8E /* BaseTypeConverter.h */,
+				A00B6EA626BB0C8000F4FC8E /* Codec.cpp */,
+				A00B6EA726BB0C8000F4FC8E /* Codec.h */,
+				A00B6EA826BB0C8000F4FC8E /* DPX.cpp */,
+				A00B6EA926BB0C8000F4FC8E /* DPX.h */,
+				A00B6EAA26BB0C8000F4FC8E /* DPXColorConverter.cpp */,
+				A00B6EAB26BB0C8000F4FC8E /* DPXColorConverter.h */,
+				A00B6EAC26BB0C8000F4FC8E /* DPXHeader.cpp */,
+				A00B6EAD26BB0C8000F4FC8E /* DPXHeader.h */,
+				A00B6EAE26BB0C8000F4FC8E /* DPXStream.h */,
+				A00B6EAF26BB0C8000F4FC8E /* ElementReadStream.cpp */,
+				A00B6EB026BB0C8000F4FC8E /* ElementReadStream.h */,
+				A00B6EB126BB0C8000F4FC8E /* EndianSwap.h */,
+				A00B6EB226BB0C8000F4FC8E /* InStream.cpp */,
+				A00B6EB326BB0C8000F4FC8E /* OutStream.cpp */,
+				A00B6EB426BB0C8000F4FC8E /* Reader.cpp */,
+				A00B6EB526BB0C8000F4FC8E /* ReaderInternal.h */,
+				A00B6EB626BB0C8000F4FC8E /* RunLengthEncoding.cpp */,
+				A00B6EB726BB0C8000F4FC8E /* RunLengthEncoding.h */,
+				A00B6EB826BB0C8000F4FC8E /* Writer.cpp */,
+				A00B6EB926BB0C8000F4FC8E /* WriterInternal.h */,
+			);
+			path = libdpx;
+			sourceTree = SOURCE_ROOT;
+		};
+		A00B6ED026BB0DCA00F4FC8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A00B6ED126BB0DCA00F4FC8E /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A045B83026BB129600859CE5 /* SwiftOIIOViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A045B83126BB129600859CE5 /* AppDelegate.swift */,
+				A045B83326BB129600859CE5 /* ContentView.swift */,
+				A045B83526BB129800859CE5 /* Assets.xcassets */,
+				A045B83A26BB129800859CE5 /* Main.storyboard */,
+				A045B83D26BB129800859CE5 /* Info.plist */,
+				A045B83E26BB129800859CE5 /* SwiftOIIOViewer.entitlements */,
+				A045B83726BB129800859CE5 /* Preview Content */,
+			);
+			path = SwiftOIIOViewer;
+			sourceTree = "<group>";
+		};
+		A045B83726BB129800859CE5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A045B83826BB129800859CE5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +262,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00B6EBC26BB0C8000F4FC8E /* Codec.h in Headers */,
+				A00B6E7426BAFFEC00F4FC8E /* OIIOImageRep.h in Headers */,
+				A045B81F26BB114100859CE5 /* OIIOHelper.h in Headers */,
+				A00B6E7126BAFFC000F4FC8E /* NSImage+OIIO.h in Headers */,
 				A00B6E6926BAFF7400F4FC8E /* SwiftOIIO.h in Headers */,
+				A00B6EC026BB0C8000F4FC8E /* DPXColorConverter.h in Headers */,
+				A00B6EBE26BB0C8000F4FC8E /* DPX.h in Headers */,
+				A00B6EC326BB0C8000F4FC8E /* DPXStream.h in Headers */,
+				A00B6ECA26BB0C8000F4FC8E /* ReaderInternal.h in Headers */,
+				A00B6EBA26BB0C8000F4FC8E /* BaseTypeConverter.h in Headers */,
+				A00B6EC226BB0C8000F4FC8E /* DPXHeader.h in Headers */,
+				A00B6ECC26BB0C8000F4FC8E /* RunLengthEncoding.h in Headers */,
+				A00B6ECE26BB0C8000F4FC8E /* WriterInternal.h in Headers */,
+				A00B6EC526BB0C8000F4FC8E /* ElementReadStream.h in Headers */,
+				A00B6EC626BB0C8000F4FC8E /* EndianSwap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,15 +301,37 @@
 			productReference = A00B6E6426BAFF7400F4FC8E /* SwiftOIIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A045B82E26BB129600859CE5 /* SwiftOIIOViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A045B83F26BB129800859CE5 /* Build configuration list for PBXNativeTarget "SwiftOIIOViewer" */;
+			buildPhases = (
+				A045B82B26BB129600859CE5 /* Sources */,
+				A045B82C26BB129600859CE5 /* Frameworks */,
+				A045B82D26BB129600859CE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOIIOViewer;
+			productName = SwiftOIIOViewer;
+			productReference = A045B82F26BB129600859CE5 /* SwiftOIIOViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A00B6E5B26BAFF7400F4FC8E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					A00B6E6326BAFF7400F4FC8E = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					A045B82E26BB129600859CE5 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -111,6 +350,7 @@
 			projectRoot = "";
 			targets = (
 				A00B6E6326BAFF7400F4FC8E /* SwiftOIIO */,
+				A045B82E26BB129600859CE5 /* SwiftOIIOViewer */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +360,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00B6E8426BB0A4100F4FC8E /* conanbuildinfo.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A045B82D26BB129600859CE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A045B83C26BB129800859CE5 /* Main.storyboard in Resources */,
+				A045B83926BB129800859CE5 /* Preview Assets.xcassets in Resources */,
+				A045B83626BB129800859CE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,14 +381,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00B6EC426BB0C8000F4FC8E /* ElementReadStream.cpp in Sources */,
+				A00B6EC926BB0C8000F4FC8E /* Reader.cpp in Sources */,
+				A00B6EBD26BB0C8000F4FC8E /* DPX.cpp in Sources */,
+				A00B6EE626BB0FE700F4FC8E /* SwiftOIIO.swift in Sources */,
+				A00B6EC826BB0C8000F4FC8E /* OutStream.cpp in Sources */,
+				A00B6ECB26BB0C8000F4FC8E /* RunLengthEncoding.cpp in Sources */,
+				A00B6ECD26BB0C8000F4FC8E /* Writer.cpp in Sources */,
+				A00B6EC726BB0C8000F4FC8E /* InStream.cpp in Sources */,
+				A00B6EBF26BB0C8000F4FC8E /* DPXColorConverter.cpp in Sources */,
+				A00B6EBB26BB0C8000F4FC8E /* Codec.cpp in Sources */,
+				A00B6E7726BB001000F4FC8E /* OIIOImageRep.mm in Sources */,
+				A00B6E7B26BB003B00F4FC8E /* OIIOHelper.mm in Sources */,
+				A00B6E8026BB008600F4FC8E /* NSImage+OIIO.m in Sources */,
+				A00B6EC126BB0C8000F4FC8E /* DPXHeader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A045B82B26BB129600859CE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A045B83426BB129600859CE5 /* ContentView.swift in Sources */,
+				A045B83226BB129600859CE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		A045B83A26BB129800859CE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A045B83B26BB129800859CE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		A00B6E6A26BAFF7400F4FC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00B6E8326BB0A4100F4FC8E /* conanbuildinfo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -202,6 +488,7 @@
 		};
 		A00B6E6B26BAFF7400F4FC8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00B6E8326BB0A4100F4FC8E /* conanbuildinfo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -259,7 +546,9 @@
 		};
 		A00B6E6D26BAFF7400F4FC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00B6E8326BB0A4100F4FC8E /* conanbuildinfo.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -277,13 +566,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtb.SwiftOIIO;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		A00B6E6E26BAFF7400F4FC8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00B6E8326BB0A4100F4FC8E /* conanbuildinfo.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -301,6 +594,55 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtb.SwiftOIIO;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A045B84026BB129800859CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftOIIOViewer/SwiftOIIOViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftOIIOViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = MMJCLAZ2E6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftOIIOViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtb.SwiftOIIOViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A045B84126BB129800859CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftOIIOViewer/SwiftOIIOViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftOIIOViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = MMJCLAZ2E6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftOIIOViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtb.SwiftOIIOViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -322,6 +664,15 @@
 			buildConfigurations = (
 				A00B6E6D26BAFF7400F4FC8E /* Debug */,
 				A00B6E6E26BAFF7400F4FC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A045B83F26BB129800859CE5 /* Build configuration list for PBXNativeTarget "SwiftOIIOViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A045B84026BB129800859CE5 /* Debug */,
+				A045B84126BB129800859CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
