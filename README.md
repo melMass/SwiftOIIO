@@ -19,8 +19,8 @@ This will generate a `conanbuildinfo.xcconfig` file (a list of header/libs path)
 ```bash
 
 # clone the repo
-git clone "xxx"
-cd "xxx"
+git clone "https://github.com/melMass/SwiftOIIO"
+cd "SwiftOIIO"
 
 # install and build deps
 conan install .
